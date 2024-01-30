@@ -6,7 +6,7 @@ This project is dedicated to the optimal placement of rectangular objects in a t
 
 ## Algorithm : Left-Bottom Placement
 
-The core algorithm utilized for optimization in this project is the Down-Left algorithm. This algorithm plays a crucial role in achieving efficient placement, ensuring minimal unused space and enhanced utilization of resources.
+The core algorithm utilized for optimization in this project is the Left Bottom algorithm. This algorithm plays a crucial role in achieving efficient placement, ensuring minimal unused space and enhanced utilization of resources.
 
 In addition to the algorithm study, g code was created.
 
@@ -52,6 +52,10 @@ https://drive.google.com/file/d/1UkivSEXZIRQYOI2DCDZVRqVewSGavUlT/view?usp=shari
 ### C2_3 Dataset
 ![C2_3 Dataset](images/c2-3-analysis.png)
 ![C2_3 Dataset Analysis](images/c2-3.png)
+
+## C1_1 Result with Plotter
+![C1_1 Dataset](images/c1_1_plotter.png)
+
 ## Conclusion
 
 This project combines hardware and software components to achieve optimal rectangular object placement using the Down-Left algorithm. The integration with CNC control systems and Arduino-based management ensures precision and efficiency throughout the process.
