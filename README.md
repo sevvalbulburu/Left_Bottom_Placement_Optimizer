@@ -62,3 +62,4 @@ https://drive.google.com/file/d/1UkivSEXZIRQYOI2DCDZVRqVewSGavUlT/view?usp=shari
 
 This project combines hardware and software components to achieve optimal rectangular object placement using the Down-Left algorithm. The integration with CNC control systems and Arduino-based management ensures precision and efficiency throughout the process.
 
+For detailed report: https://drive.google.com/file/d/1O-EpCdNuWfqdfrlCtQyxZYBZNRxHhaTJ/view?usp=sharing
