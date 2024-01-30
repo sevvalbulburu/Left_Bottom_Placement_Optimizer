@@ -8,6 +8,8 @@ This project is dedicated to the optimal placement of rectangular objects in a t
 
 The core algorithm utilized for optimization in this project is the Left Bottom algorithm. This algorithm plays a crucial role in achieving efficient placement, ensuring minimal unused space and enhanced utilization of resources.
 
+The algorithm aims to place the incoming object in the first available space, furthest down and to the left. If it cannot be placed in that position, it attempts to rotate the object and tries again.
+
 In addition to the algorithm study, g code was created.
 
 ## Dataset 
@@ -46,15 +48,15 @@ https://drive.google.com/file/d/1UkivSEXZIRQYOI2DCDZVRqVewSGavUlT/view?usp=shari
 ## Results
 
 ### C1_3 Dataset
-![C1_3 Dataset Analysis](images/c1-3-analysis.png)
+![C1_3 Dataset Analysis](images/c1_3_analysis.png)
 ![C1_3 Dataset](images/c1_3.png)
 
 ### C2_3 Dataset
-![C2_3 Dataset](images/c2-3-analysis.png)
-![C2_3 Dataset Analysis](images/c2-3.png)
+![C2_3 Dataset](images/c2_3_analysis.png)
+![C2_3 Dataset Analysis](images/c2_3.png)
 
 ## C1_1 Result with Plotter
-![C1_1 Dataset](images/c1_1_plotter.png)
+![C1_1 Dataset](images/c1_1_plotter.jpg)
 
 ## Conclusion
 
