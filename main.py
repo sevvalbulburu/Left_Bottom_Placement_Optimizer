@@ -53,7 +53,6 @@ filename = "./dataset/C2_3"
 # Read data from file
 area_size, rectangles = read_file(filename)
 
-
 # Solve the problem for the given board size
 board = [[0 for _ in range(area_size[1])] for _ in range(area_size[0])]
 placed_rectangles = []
@@ -95,18 +94,18 @@ def convert_to_gcode(placed_rectangles):
         gcode += f"M3\n"
         gcode+= f"G90\n"
         gcode+= f"G21\n"
-        gcode += f"G1 F20\n"  # Çizim hızı ayarı
-        gcode += f"G1 X{left_bot_x } Y{left_bot_y}\n"  # Başlangıç noktası
-        gcode += f"m3 s90\n"  # Kalem aktifleştir
-        gcode += f"G4 P0.20000000298023224\n"  # kalemi bekle  
-        gcode += f"G1 F20\n"  # Çizim hızı ayarı
+        gcode += f"G1 F20\n"  # Drawing speed setting
+        gcode += f"G1 X{left_bot_x } Y{left_bot_y}\n"  # Starting Point
+        gcode += f"m3 s90\n"  # Acitvate pen
+        gcode += f"G4 P0.20000000298023224\n"  # wait 
+        gcode += f"G1 F20\n"  # Drawing speed setting
         gcode += f"G1 X{(left_bot_x + width)} Y{left_bot_y}\n"  
         gcode += f"G1 X{(left_bot_x + width)} Y{(left_bot_y + height)}\n"  
         gcode += f"G1 X{left_bot_x} Y{(left_bot_y + height)}\n"  
         gcode += f"G1 X{left_bot_x} Y{left_bot_y}\n" 
-        gcode += f"m5\n"  # Kalem kapat
+        gcode += f"m5\n"  # Close the pen
 
-    gcode += f"G1 X{0} Y{0}\n"  # Başlangıç noktası
+    gcode += f"G1 X{0} Y{0}\n"  #  Starting Point
     return gcode
 
 
@@ -127,9 +126,9 @@ ax.set_ylabel("Height")
 plt.gca().set_aspect('equal', adjustable='box')
 plt.show()
 
-'''
+# Write gcode to a file
 gcode_str = convert_to_gcode(placed_rectangles)
 file = open('gcode. gcode', 'w+')
 file.write(gcode_str)
-'''
+
 
