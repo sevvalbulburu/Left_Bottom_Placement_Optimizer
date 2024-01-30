@@ -38,7 +38,6 @@ def can_place(board, rectangle, x, y):
                 return False
     return True
 
-
 def read_file(filename):
     with open(filename, 'r') as file:
         lines = file.readlines()
@@ -62,7 +61,7 @@ for rectangle in rectangles:
     else:
         print(f"Failed to place rectangle of size {rectangle.width}x{rectangle.height}")
 
-        
+
 def calculate_success_ratio(board, area_size):
     total_area = area_size[0] * area_size[1]
     used_area = sum(row.count(1) for row in board)
@@ -107,8 +106,6 @@ def convert_to_gcode(placed_rectangles):
 
     gcode += f"G1 X{0} Y{0}\n"  #  Starting Point
     return gcode
-
-
 
 # Visualization
 fig, ax = plt.subplots()
